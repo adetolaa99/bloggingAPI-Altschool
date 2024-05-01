@@ -38,4 +38,4 @@ UserSchema.pre('save', async function (next) {
   return bcrypt.compare(candidatePassword, this.password);
  }; 
 
-module.exports = mongoose.model("user", UserSchema);
+module.exports = mongoose.model("User", UserSchema);
